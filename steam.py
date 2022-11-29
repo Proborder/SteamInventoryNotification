@@ -11,6 +11,7 @@ def get_inventory_list(steam_id, game_id):
         headers={
         	'User-Agent': f'{ua.random}'},
         	'Referer': f'https://steamcommunity.com/profiles/{steam_id}/inventory/')
+        }
 
     data = response.json()
     items = [item['assetid'] for item in data.get('assets')]
