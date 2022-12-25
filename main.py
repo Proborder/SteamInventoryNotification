@@ -1,9 +1,11 @@
-import config
 import asyncio
-import configparser
 
+import configparser
 from aiogram import Bot, Dispatcher, executor, types
+
+import config
 from steam import get_inventory_list
+
 
 
 config = configparser.ConfigParser()
