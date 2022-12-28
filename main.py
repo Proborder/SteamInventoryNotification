@@ -7,7 +7,6 @@ import config
 from steam import get_inventory_list
 
 
-
 config = configparser.ConfigParser()
 config.read('settings.ini')
 TOKEN = config['bot']['TOKEN']
